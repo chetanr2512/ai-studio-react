@@ -95,3 +95,5 @@ npm run lint
 ```
 
 Built with ❤️ using modern web technologies
+
+NOTE: This is just a UI implementation with a Mock API it dosen't actually generate images
