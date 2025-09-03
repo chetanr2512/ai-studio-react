@@ -49,7 +49,7 @@ export const useAIStudio = () => {
       }, abortControllerRef.current.signal)
 
       // Add to history (keep only last 5)
-      setHistory(prev => {
+      setHistory((prev :) => {
         const newHistory = [result, ...prev].slice(0, 5)
         return newHistory
       })
@@ -86,6 +86,8 @@ export const useAIStudio = () => {
 
   const removeImage = useCallback(() => {
     setCurrentImage(null)
+    setCurrentPrompt("")
+     setCurrentStyle("")
     showToast('Image removed', 'info')
   }, [showToast])
 
